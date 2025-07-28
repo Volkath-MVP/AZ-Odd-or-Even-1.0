@@ -41,7 +41,7 @@ def V(response): #Yeah, I put "V" because I didn’t know what to name it :/
         score += 500 #score addition
     else:
         score -=800 #score subtraction
-        if score <=0: #prevents it from going below zero
+        if score <=0: #prevents it from going below zero.
             score =0
     Score.config(text=f"{score}")  #Updates the score in the text. I hadn’t thought of that... Ah... It was the f-string... I had forgotten :/
 Score=tk.Label(root, text=f"{score}", font=("Arial", 12))
